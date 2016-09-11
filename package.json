@@ -1,0 +1,26 @@
+{
+  "name": "raf",
+  "version": "0.0.8",
+  "scripts": {
+    "build-module": "browserify index.js | uglifyjs -c -m > index.min.js",
+    "build-example": "browserify example/index.js > example/bundle.js",
+    "build": "npm run build-module && npm run build-example",
+    "start": "budo example/index.js:bundle.js -P -l -d example"
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "budo": "^9.0.0",
+    "uglify-js": "^2.7.3"
+  },
+  "browserify": {
+    "transform": []
+  },
+  "description": ":movie_camera: A singleton RAF wrapper"
+}
