@@ -30,7 +30,7 @@ npm install pqml/raf -S
 ## Usage
 
 ```javascript
-const raf = require('raf')
+var raf = require('raf')
 
 var run = function (dt) {
   console.log('default call at 60fps')
