@@ -73,7 +73,7 @@ Create a closure to invoke _function_ at the specified _framerate_ <br/>
 It's up to you to add/remove it from the RAF observers
 
 ## Credits
-Based on an ES6 lib by [https://github.com/antoninlanglade](Antonin Langlade)
+Based on an ES6 lib by [Antonin Langlade](https://github.com/antoninlanglade)
 
 ## License
 MIT.
