@@ -62,14 +62,14 @@ Start the RAF wrapper
 Stop the RAF wrapper
 
 ### add(function)
-Add _function_ to the RAF observers array
+Add _function_ to the RAF observers array <br/>
 _function_ will be called with the delta time as first argument
 
 ### remove(function)
 Remove _function_ from the RAF observers array
 
 ### fpsLimiter(framerate, function)
-Create a closure to invoke _function_ at the specified _framerate_
+Create a closure to invoke _function_ at the specified _framerate_ <br/>
 It's up to you to add/remove it from the RAF observers
 
 ## Credits
