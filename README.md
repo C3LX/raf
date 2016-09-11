@@ -14,20 +14,20 @@
 
 ===
 
-### Features
+## Features
 
 - No dependencies
 - Auto Stop/Play when adding/removing functions
 - Fps Limiter
+- Delta Time
 
-
-### Installation
+## Installation
 
 ```sh
 npm install pqml/raf -S
 ```
 
-### Usage
+## Usage
 
 ```javascript
 const raf = require('raf')
@@ -38,6 +38,7 @@ var run = function (dt) {
 
 // create a function that can only run at 1fps
 var oneSecInterval = raf.fpsLimiter(1, function (dt) {
+  //display the delta time
   console.log('tick every second — delta time: ', dt)
 })
 
@@ -52,26 +53,27 @@ window.setTimeout(function () {
 
 ```
 
-### Methods
+## Methods
 
-#### start(function)
+### start(function)
 Start the RAF wrapper
 
-#### stop(function)
+### stop(function)
 Stop the RAF wrapper
 
-#### add(function)
+### add(function)
 Add _function_ to the RAF observers array
+_function_ will be called with the delta time as first argument
 
-#### remove(function)
+### remove(function)
 Remove _function_ from the RAF observers array
 
-#### fpsLimiter(framerate, function)
+### fpsLimiter(framerate, function)
 Create a closure to invoke _function_ at the specified _framerate_
 It's up to you to add/remove it from the RAF observers
 
-### Credits
+## Credits
 Based on an ES6 lib by [https://github.com/antoninlanglade](Antonin Langlade)
 
-### License
+## License
 MIT.
