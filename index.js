@@ -35,6 +35,7 @@ function raf () {
 
   function start () {
     if (_raf) return
+    _lastDate = Date.now()
     _run()
   }
 

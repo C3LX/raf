@@ -1,6 +1,6 @@
 {
   "name": "raf",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "scripts": {
     "build-module": "browserify index.js | uglifyjs -c -m > index.min.js",
     "build-example": "browserify example/index.js > example/bundle.js",
