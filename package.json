@@ -8,11 +8,8 @@
     "start": "budo example/index.js:bundle.js -P -l -d example"
   },
   "main": "index.js",
-  "author": "",
+  "author": "C3LX",
   "license": "MIT",
-  "directories": {
-    "example": "example"
-  },
   "dependencies": {},
   "devDependencies": {
     "browserify": "^13.1.0",
@@ -22,5 +19,4 @@
   "browserify": {
     "transform": []
   },
-  "description": ":movie_camera: A singleton RAF wrapper"
 }
