@@ -1,5 +1,5 @@
 {
-  "name": "raf",
+  "name": "@c3lx/raf",
   "version": "0.1.0",
   "scripts": {
     "build-module": "browserify index.js | uglifyjs -c -m > index.min.js",
@@ -18,5 +18,5 @@
   },
   "browserify": {
     "transform": []
-  },
+  }
 }
